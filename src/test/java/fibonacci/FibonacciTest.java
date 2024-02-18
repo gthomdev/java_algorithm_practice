@@ -11,4 +11,11 @@ public class FibonacciTest {
         int expectedResult = 3628800;
         assertEquals(expectedResult, Factorial.factorial(input));
     }
+
+    @Test
+    public void fibonacciShouldReturnCorrectFibonacci() {
+        int input = 10;
+        int expectedResult = 55;
+        assertEquals(expectedResult, Fibonacci.recursiveFibonacci(input));
+    }
 }
